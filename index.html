@@ -21,7 +21,9 @@
             <!-- Contenedor para el texto de entrada y botones de encriptar/desencriptar -->
             <div class="text-container">
                 <textarea id="input-text" placeholder="Ingresa el Texto que Desea Encriptar aquí..."></textarea>
+                <div class="mensajedealerta">
                 <p>⚠️ Sólo letras minúsculas y sin acentos</p>
+                </div>
                 <div class="buttons">
                     <button id="encrypt-button" class="action-button" aria-label="Encriptar texto">Encriptar</button>
                     <button id="decrypt-button" class="action-button" aria-label="Desencriptar texto encriptado">Desencriptar</button>
@@ -38,10 +40,21 @@
     </div>
     <!-- Pie de página -->
     <footer class="footer">
-        <p>Desarrollado por Jose Ignacio Farias</p>
+        <p>* Desarrollado por Jose Ignacio Farias *</p>
         <p>2024</p>
-        <img class="imagen-footer" src="img\Muñeco (2).png">
     </footer>
+        <img class="imagen-footer" src="img\rick_morty_PNG22.png">
+    <div class="social-buttons">
+        <a href="https://www.instagram.com/cultiva.conciencia/" class="social-button instagram" target="_blank">
+            <img src="https://img.icons8.com/color/48/000000/instagram-new.png" alt="Instagram">
+        </a>
+        <a href="https://github.com/joseignacio-ing-agricola" class="social-button github" target="_blank">
+            <img src="https://img.icons8.com/material-rounded/48/000000/github.png" alt="GitHub">
+        </a>
+        <a href="https://www.linkedin.com/in/jose-ignacio-farias-lopez-2b0297248/" class="social-button linkedin" target="_blank">
+            <img src="https://img.icons8.com/color/48/000000/linkedin.png" alt="LinkedIn">
+        </a>
+    </div>
     <!-- Contenedor para los mensajes emergentes (toast) -->
     <div id="toast" class="toast"></div>
     <!-- Vincula el archivo de JavaScript -->
