@@ -18,11 +18,12 @@
 }
 
 .logo{
-    text-align: left;
-  }
+    text-align: center;
+    background-color: var(--color-secundario);
+ }
 
   .logoimg{
-    width: 3.5%;
+    width: 8%;
   }
 /* Estilo para el cuerpo del documento */
 body {
@@ -46,7 +47,7 @@ body {
     border-radius: 8px;
     box-shadow: 0 0 10px var(--color-primario);
     background-color: rgba(0, 0, 0, 0.644); /* Fondo transparente */
-    width: auto;
+    width: 100%;
     max-width: 800px;
     text-align: center;
 }
@@ -59,7 +60,7 @@ header h1 {
     color: transparent;
     font-size: 2em; /* Tamaño del texto */
     font-weight: bold; /* Grosor del texto */
-    text-align: center; /* Alineación centrada */
+    text-align: left; /* Alineación izquierda */
     margin: 20px 0; /* Márgenes superior e inferior */
     text-shadow: 2px 2px 4px var(--color-secundario)(0, 0, 0, 0.5); /* Sombra para resaltar el texto */
 }
@@ -74,6 +75,7 @@ header h1 {
 
 .mensajedealerta{
     font-size: 10px;
+    text-align: left;
 }
 
 /* Estilo para los contenedores de texto */
