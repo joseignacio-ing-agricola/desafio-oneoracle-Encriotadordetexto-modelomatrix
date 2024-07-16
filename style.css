@@ -1,0 +1,193 @@
+/* Importa las fuentes desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+/* Define las variables CSS para los colores y las fuentes */
+:root {
+    --color-primario: #000000;
+    --color-secundario: #00ff4c;
+    --color-terciario: #000000;
+    --color-hover: #000000;
+    --fuente-montserrat: 'Montserrat', sans-serif;
+}
+
+/* Establece márgenes y rellenos a 0 para todos los elementos y establece el modelo de caja */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.logo{
+    text-align: left;
+}
+
+/* Estilo para el cuerpo del documento */
+body {
+    width: 100%;
+    font-family: var(--fuente-montserrat);
+    background-image: url('img/fondo.jpg'); /* Imagen de fondo */
+    background-size: cover; /* Cubre toda la pantalla */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Espacio entre los elementos principales */
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Estilo para el contenedor principal */
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px var(--color-primario);
+    background-color: rgba(0, 0, 0, 0.644); /* Fondo transparente */
+    width: auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+/* Estilo para el encabezado */
+header h1 {
+    width: auto;
+    background-image: linear-gradient(to right, var(--color-primario), var(--color-secundario)); /* Gradiente */
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 2em; /* Tamaño del texto */
+    font-weight: bold; /* Grosor del texto */
+    text-align: center; /* Alineación centrada */
+    margin: 20px 0; /* Márgenes superior e inferior */
+    text-shadow: 2px 2px 4px var(--color-secundario)(0, 0, 0, 0.5); /* Sombra para resaltar el texto */
+}
+
+/* Estilo para el contenido principal */
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Permite envolver los elementos en pantallas pequeñas */
+}
+
+/* Estilo para los contenedores de texto */
+.text-container {
+    width: calc(50% - 25px); /* Ancho ajustado de los textareas */
+    margin-bottom: 20px;
+    color: var(--color-secundario);
+    background-color: #000000b3;
+}
+
+/* Estilo para las áreas de texto */
+textarea {
+    color: var(--color-secundario);
+    background-color: var(--color-primario);
+    width: 100%;
+    height: 200px; /* Altura de las áreas de texto */
+    padding: 10px;
+    border: 1px solid var(--color-secundario);
+    border-radius: 4px;
+    font-size: 16px;
+    resize: none; /* No permite cambiar el tamaño */
+    margin-bottom: 10px;
+}
+
+/* Estilo para los contenedores de botones */
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+/* Estilo para los botones de acción */
+.action-button {
+    flex: 1;
+    padding: 0.5%;
+    margin: 1%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: var(--color-hover);
+    color: var(--color-secundario);
+    font-size: 16px;
+    font-family: var(--fuente-montserrat);
+    transition: background-color 0.3s; /* Transición para el cambio de color de fondo */
+}
+
+/* Cambio de color de fondo al pasar el mouse */
+.action-button:hover {
+    background-color: var(--color-hover);
+}
+
+/* Enfoque del botón */
+.action-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 253, 253, 0.25);
+}
+
+.imagen-footer{
+    width: calc(10% - 60px); /* Ancho ajustado de los textareas */
+    margin-bottom: 20px;
+}
+/* Estilo para el pie de página */
+footer {
+    color: var(--color-secundario);
+    font-family: var(--fuente-montserrat);
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Estilo para las notificaciones */
+.toast {
+    visibility: hidden; /* Oculta la notificación por defecto */
+    min-width: 250px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    transform: translateX(-50%);
+    transition: visibility 0s, opacity 0.5s linear; /* Transición para mostrar/ocultar la notificación */
+}
+
+/* Muestra la notificación */
+.toast.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Estilo específico para el área de texto de salida */
+#output-text {
+    background-size: contain; /* Ajusta el tamaño de la imagen para que quepa dentro del cuadro */
+    background-position: center; /* Centra la imagen de fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+/* Estilos responsivos para pantallas pequeñas */
+@media (max-width: 600px) {
+    .main-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-container {
+        width: calc(100% - 20px); /* Ancho ajustado de los textareas para una columna completa */
+    }
+
+    textarea {
+        height: 100px; /* Ajuste de altura para pantallas pequeñas */
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    .action-button {
+        margin: 10px 0;
+    }
+}

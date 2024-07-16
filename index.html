@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <!-- Vincula el archivo de estilos CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img class="logoImg" src="img/logo.png">
+        </div>
+        <!-- Encabezado de la página -->
+        <header>
+        
+        <h1>NeoCrypt</h1>
+       
+        </header>
+        <!-- Contenido principal -->
+        <main class="main-content">
+            <!-- Contenedor para el texto de entrada y botones de encriptar/desencriptar -->
+            <div class="text-container">
+                <textarea id="input-text" placeholder="Ingresa el Texto que Desea Encriptar aquí..."></textarea>
+                <p>⚠️ Sólo letras minúsculas y sin acentos</p>
+                <div class="buttons">
+                    <button id="encrypt-button" class="action-button" aria-label="Encriptar texto">Encriptar</button>
+                    <button id="decrypt-button" class="action-button" aria-label="Desencriptar texto encriptado">Desencriptar</button>
+                </div>
+            </div>
+            <!-- Contenedor para el texto de salida y botón de copiar -->
+            <div class="text-container">
+                <textarea id="output-text" placeholder="Ningún Texto ha sido Encriptado..." readonly aria-live="polite"></textarea>
+                <div class="buttons">
+                    <button id="copy-button" class="action-button" aria-label="Copiar texto encriptado">Copiar</button>
+                </div>
+            </div>
+        </main>
+    </div>
+    <!-- Pie de página -->
+    <footer class="footer">
+        <p>Desarrollado por Jose Ignacio Farias</p>
+        <p>2024</p>
+        <img class="imagen-footer" src="img\Muñeco (2).png">
+    </footer>
+    <!-- Contenedor para los mensajes emergentes (toast) -->
+    <div id="toast" class="toast"></div>
+    <!-- Vincula el archivo de JavaScript -->
+    <script src="app.js"></script>
+</body>
+</html>
