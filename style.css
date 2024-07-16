@@ -19,8 +19,11 @@
 
 .logo{
     text-align: left;
-}
+  }
 
+  .logoimg{
+    width: 3.5%;
+  }
 /* Estilo para el cuerpo del documento */
 body {
     width: 100%;
@@ -125,7 +128,7 @@ textarea {
 }
 
 .imagen-footer{
-    width: calc(10% - 60px); /* Ancho ajustado de los textareas */
+    width: calc(3% - 20px); /* Ancho ajustado de los textareas */
     margin-bottom: 20px;
 }
 /* Estilo para el pie de página */
