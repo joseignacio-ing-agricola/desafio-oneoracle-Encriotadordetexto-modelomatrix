@@ -25,7 +25,7 @@
  }
 
   .logoimg{
-    width: 10%;
+    width: 20%;
   }
 /* Estilo para el cuerpo del documento */
 body {
@@ -117,8 +117,8 @@ textarea {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    background-color: var(--color-hover);
-    color: var(--color-secundario);
+    background-color: var(--color-secundario);
+    color: var(--color-primario);
     font-size: 13px;
     font-family: var(--fuente-montserrat);
     transition: background-color 0.3s; /* Transición para el cambio de color de fondo */
@@ -126,7 +126,7 @@ textarea {
 
 /* Cambio de color de fondo al pasar el mouse */
 .action-button:hover {
-    background-color: var(--color-hover);
+    background-color: #ff0000;
 }
 
 /* Enfoque del botón */
@@ -136,7 +136,7 @@ textarea {
 }
 
 .imagen-footer{
-    width: 2%; /* Ancho ajustado de los textareas */
+    width: 2%; /* Ancho ajustado  */
     margin-bottom: 20px;
 }
 /* Estilo para el pie de página */
