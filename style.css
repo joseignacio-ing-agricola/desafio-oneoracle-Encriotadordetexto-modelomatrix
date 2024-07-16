@@ -20,10 +20,12 @@
 .logo{
     text-align: center;
     background-color: var(--color-secundario);
+    border-radius: 800px;   
+    
  }
 
   .logoimg{
-    width: 8%;
+    width: 10%;
   }
 /* Estilo para el cuerpo del documento */
 body {
@@ -172,10 +174,13 @@ footer {
 }
 
 .github:hover {
-    background-color: #333;
+    background-color: #ffffff;
 }
 .instagram:hover {
-    background-color: #e1306c;
+    background-color: #ff0000;
+}
+.linkedin:hover {
+    background-color: #00d9ff;
 }
 
 /* Estilo para las notificaciones */
