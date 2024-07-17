@@ -2,30 +2,33 @@
 <html lang="es-mx">
 <head>
     <meta charset="UTF-8">
+    <!-- Define la codificación de caracteres del documento como UTF-8 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Establece el título de la página -->
     <title>Encriptador de Texto</title>
     <!-- Vincula el archivo de estilos CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
+        <!-- Contenedor para el logotipo -->
         <div class="logo">
-            <img class="logoimg" src="img/logo.png">
+            <img class="logoimg" src="img/logo.png" alt="Logo">
         </div>
         <!-- Encabezado de la página -->
-    <header>
-           <h1>NeoCrypt</h1>
-    </header>
+        <header>
+            <h1>NeoCrypt</h1>
+        </header>
         <!-- Contenido principal -->
         <main class="main-content">
-
-
             <!-- Contenedor para el texto de entrada y botones de encriptar/desencriptar -->
             <div class="text-container">
                 <textarea id="input-text" placeholder="Ingresa el Texto que Desea Encriptar aquí..."></textarea>
+                <!-- Mensaje de alerta -->
                 <div class="mensajedealerta">
-                <p>⚠️ Sólo letras minúsculas y sin acentos</p>
+                    <p>⚠️ Sólo letras minúsculas y sin acentos</p>
                 </div>
+                <!-- Botones de encriptar y desencriptar -->
                 <div class="buttons">
                     <button id="encrypt-button" class="action-button" aria-label="Encriptar texto">Encriptar</button>
                     <button id="decrypt-button" class="action-button" aria-label="Desencriptar texto encriptado">Desencriptar</button>
@@ -34,12 +37,14 @@
             <!-- Contenedor para el texto de salida y botón de copiar -->
             <div class="text-container">
                 <textarea id="output-text" placeholder="Ningún Texto ha sido Encriptado..." readonly aria-live="polite"></textarea>
+                <!-- Botón de copiar -->
                 <div class="buttons">
                     <button id="copy-button" class="action-button" aria-label="Copiar texto encriptado">Copiar</button>
                 </div>
             </div>
         </main>
     </div>
+    <!-- Botones de redes sociales -->
     <div class="social-buttons">
         <a href="https://www.instagram.com/cultiva.conciencia/" class="social-button instagram" target="_blank">
             <img src="https://img.icons8.com/color/48/000000/instagram-new.png" alt="Instagram">
@@ -56,7 +61,8 @@
         <p>* Desarrollado por Jose Ignacio Farias *</p>
         <p>2024</p>
     </footer>
-        <img class="imagen-footer" src="img\rick_morty_PNG22.png">
+    <!-- Imagen en el pie de página -->
+    <img class="imagen-footer" src="img/rick_morty_PNG22.png" alt="Rick and Morty">
   
     <!-- Contenedor para los mensajes emergentes (toast) -->
     <div id="toast" class="toast"></div>

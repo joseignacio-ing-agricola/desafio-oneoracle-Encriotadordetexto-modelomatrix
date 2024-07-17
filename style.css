@@ -17,16 +17,18 @@
     box-sizing: border-box;
 }
 
-.logo{
+/* Estilo para el contenedor del logo */
+.logo {
     text-align: center;
     background-color: var(--color-secundario);
     border-radius: 800px;   
-    
- }
+}
 
-  .logoimg{
+/* Estilo para la imagen del logo */
+.logoimg {
     width: 20%;
-  }
+}
+
 /* Estilo para el cuerpo del documento */
 body {
     width: auto;
@@ -75,7 +77,8 @@ header h1 {
     flex-wrap: wrap; /* Permite envolver los elementos en pantallas pequeñas */
 }
 
-.mensajedealerta{
+/* Estilo para el mensaje de alerta */
+.mensajedealerta {
     font-size: 10px;
     text-align: left;
 }
@@ -135,10 +138,12 @@ textarea {
     box-shadow: 0 0 0 3px rgba(255, 253, 253, 0.25);
 }
 
-.imagen-footer{
-    width: 2%; /* Ancho ajustado  */
+/* Estilo para la imagen en el pie de página */
+.imagen-footer {
+    width: 2%; /* Ancho ajustado */
     margin-bottom: 20px;
 }
+
 /* Estilo para el pie de página */
 footer {
     color: #fff;
@@ -149,11 +154,13 @@ footer {
     background-color: rgba(0, 0, 0, 0.352);
 }
 
+/* Estilo para los botones de redes sociales */
 .social-buttons {
     display: flex;
     gap: 10px;
 }
 
+/* Estilo para cada botón de red social */
 .social-button {
     display: inline-block;
     width: 48px;
@@ -163,22 +170,27 @@ footer {
     transition: transform 0.3s;
 }
 
+/* Estilo para las imágenes dentro de los botones de redes sociales */
 .social-button img {
     width: 100%;
     height: 100%;
     display: block;
 }
 
+/* Efecto de zoom al pasar el mouse sobre los botones de redes sociales */
 .social-button:hover {
     transform: scale(1.1);
 }
 
+/* Colores de fondo específicos para los botones de redes sociales al pasar el mouse */
 .github:hover {
     background-color: #ffffff;
 }
+
 .instagram:hover {
     background-color: #ff0000;
 }
+
 .linkedin:hover {
     background-color: #00d9ff;
 }
