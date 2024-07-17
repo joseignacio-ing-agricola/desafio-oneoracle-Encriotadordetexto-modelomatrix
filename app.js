@@ -53,45 +53,20 @@ document.getElementById('copy-button').addEventListener('click', function() {
     }, 2000);
 });
 
-// Función para encriptar el texto utilizando un cifrado César simple
+// Función para encriptar el texto
 function encryptText(text) {
-    let shift = 3; // Desplazamiento para el cifrado
-    // Convierte cada carácter del texto según el desplazamiento
-    let encryptedText = text.split('').map(char => {
-        let code = char.charCodeAt(0);
-        if (code >= 65 && code <= 90) {
-            // Cifra letras mayúsculas
-            return String.fromCharCode(((code - 65 + shift) % 26) + 65);
-        } else if (code >= 97 && code <= 122) {
-            // Cifra letras minúsculas
-            return String.fromCharCode(((code - 97 + shift) % 26) + 97);
-        } else {
-            // Deja otros caracteres sin cambios
-            return char;
-        }
-    }).join('');
-    return encryptedText;
+    return text.replace(/e/g, 'enter')
+               .replace(/i/g, 'imes')
+               .replace(/a/g, 'ai')
+               .replace(/o/g, 'ober')
+               .replace(/u/g, 'ufat');
 }
 
-
-
-// Función para desencriptar el texto utilizando un cifrado César simple
+// Función para desencriptar el texto
 function decryptText(text) {
-    let shift = 3; // Desplazamiento para el descifrado
-    // Convierte cada carácter del texto según el desplazamiento
-    let decryptedText = text.split('').map(char => {
-        let code = char.charCodeAt(0);
-        if (code >= 65 && code <= 90) {
-            // Descifra letras mayúsculas
-            return String.fromCharCode(((code - 65 - shift + 26) % 26) + 65);
-        } else if (code >= 97 && code <= 122) {
-            // Descifra letras minúsculas
-            return String.fromCharCode(((code - 97 - shift + 26) % 26) + 97);
-        } else {
-            // Deja otros caracteres sin cambios
-            return char;
-        }
-    }).join('');
-    return decryptedText;
+    return text.replace(/enter/g, 'e')
+               .replace(/imes/g, 'i')
+               .replace(/ai/g, 'a')
+               .replace(/ober/g, 'o')
+               .replace(/ufat/g, 'u');
 }
-
