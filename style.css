@@ -60,7 +60,7 @@ body {
 header h1 {
     width: auto;
     background-image: linear-gradient(to right, var(--color-secundario), var(--color-primario)); /* Gradiente */
-    -webkit-background-clip: text;
+    background-clip: text;
     color: transparent;
     font-size: 2em; /* Tamaño del texto */
     font-weight: bold; /* Grosor del texto */
